@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+<link href="css/style.css" rel="stylesheet" type="text/css" /> 
+<link href="css/tipsy.css" rel="stylesheet" type="text/css" /> 
+<script type="text/javascript" src="http://fast.fonts.net/jsapi/8da6cfce-072e-4d64-8bbe-9c8b672b9bc9.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="js/lib/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/lib/d3.min.js"></script>
+
+<script type="text/javascript" src="js/lib/jquery.tipsy.js"></script>
+<script type="text/javascript" src="js/lib/jquery.hoverIntent.js"></script>
+<div id="keyToggle">
+KEY
+</div>
+
+<div id="key">
+<img src="key.png">
+</div>
+
+<script>
+setTimeout(function(){
+$("#key").fadeOut("slow",function(){
+        })
+ }, 6000)
+$('#keyToggle').click(function(){
+  $("#key").slideToggle( "slow", function() {
+});
+})
+</script>
+<div id="arts"></div>
+
+<script type="text/javascript" src="js/fineArts.js"></script>
+
+</body>
+</html>
+
